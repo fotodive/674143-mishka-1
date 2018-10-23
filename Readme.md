@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юлия Залозная](https://up.htmlacademy.ru/adaptive/15/user/674143).
-* Наставник: `Неизвестно`.
+* Наставник: [Юлия Залозная].
 
 ---
 
