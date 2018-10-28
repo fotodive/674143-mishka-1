@@ -1,12 +1,19 @@
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
 .features__title {
   font-family: "Open Sans Bold", Arial, sans-serif;
   font-size: 25px;
   line-height: 30px;
   color: #000000;
-  margin: 70px 0 85px;
+  margin: 70px 0 2px;
 }
 .features__item {
+  position: relative;
   margin-top: 83px;
+  width: 260px;
 }
 .features__item-description {
   font-family: "Open Sans Bold", Arial, sans-serif;
@@ -14,4 +21,38 @@
   line-height: 20px;
   color: #000000;
   width: 250px;
+  margin: 0;
 }
+.features__item svg {
+  position: absolute;
+  fill: #63d1bb;
+  top: -50px;
+  left: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .features__list {
+    height: 500px;
+  }
+  .features__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+  .features__item-description {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .features__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+  .features__list {
+    margin-left: 180px;
+  }
+}
+
+

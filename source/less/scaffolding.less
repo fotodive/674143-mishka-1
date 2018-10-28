@@ -1,5 +1,5 @@
 body {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   padding: 0;
   font-family: "Open Sans", Arial, sans-serif;
@@ -8,6 +8,7 @@ body {
   font-weight: 300;
   color: #444444;
   background-color: #ffffff;
+
 }
 a {
   text-decoration: none;
@@ -45,5 +46,24 @@ ul {
  .reviews__wrapper {
    margin: 0 30px;
  }
-
+ @media (min-width: @tablet-width) {
+  .body {
+    min-width: 768px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+  .best-sale__wrapper,
+  .features__wrapper,
+  .review__wrapper,
+  .contacts__wrapper,
+  .reviews__wrapper {
+    margin: 0 50px;
+  
+  }
+}
+@media (min-width: @desktop-width) {
+  .body {
+    min-width: 1150px;
+  }
+}
 

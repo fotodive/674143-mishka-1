@@ -5,8 +5,9 @@
 }
 .category__item {
   height: 103px;
-  flex-basis: 100%;
+  flex-basis: 320px;
   display: flex;
+  flex-grow: 1;
 }
 .category__title {
   display: flex;
@@ -32,4 +33,15 @@
   background-color: @bg-rightbtn;
   background-image: url("../img/icon-toy.svg");
   background-position: 90% 50%;
+}
+
+
+@media (min-width: @tablet-width) {
+ .category {
+   margin: 0 50px;
+ }
+
+}
+@media (min-width: @desktop-width) {
+
 }
