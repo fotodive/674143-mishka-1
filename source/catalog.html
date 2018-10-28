@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
     <title>Каталог товаров: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -9,10 +10,10 @@
 
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/150X100" href="index.html" width="150" height="100" alt="Логотип">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" href="index.html" width="86" height="35" alt="Логотип">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__toggle"></div>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item--active">
@@ -33,45 +34,45 @@
     </header>
 
     <main class="page-catalog">
-      <h1 class="page-title">Каталог товаров</h1>
+      <h2 class="page-title">Каталог товаров</h2>
       <section class="catalog">
         <ul class="catalog__list">
           <li class="catalog__item">
             <article class="card">
               <p class="card__picture">
-                <img class="card__picture-image" src="http://placehold.it/150x100" width="150" height="100" alt="Зайчик-попрыгайчик">
+                <img class="card__picture-image" src="img/photo-hare-mobile@1x.jpg" width="258" height="195" alt="Зайчик-попрыгайчик">
               </p>
-              <h2 class="card__title">Зайчик-попрыгайчик</h2>
+              <h3 class="card__title">Зайчик-попрыгайчик</h3>
               <p class="card__description">Рост 30 см, вес 200 г </p>
               <div class="card__footer">
-                <p class="card__price">1200 руб.</p>
-                <button class="card__price-button" type="button">В корзину</button>
+                <p class="card__price">1 200 руб.</p>
+                <button class="card__price-button" type="button"></button>
               </div>
             </article>
           </li>
           <li class="catalog__item">
             <article class="card">
               <p class="card__picture">
-                <img class="card__picture-image" src="http://placehold.it/150x100" width="150" height="100" alt="Корзинка для белья">
+                <img class="card__picture-image" src="img/photo-bowl-mobile@1x.jpg" width="258" height="195" alt="Корзинка для белья">
               </p>
-              <h2 class="card__title">Корзинка для белья</h2>
+              <h3 class="card__title">Корзинка для белья</h3>
               <p class="card__description">Диаметр 15 см, высота 10 см </p>
               <div class="card__footer">
                 <p class="card__price">690 руб.</p>
-                <button class="card__price-button" type="button">В корзину</button>
+                <button class="card__price-button" type="button"></button>
               </div>
             </article>
           </li>
           <li class="catalog__item">
             <article class="card">
               <p class="card__picture">
-                <img class="card__picture-image" src="http://placehold.it/150x100" width="150" height="100" alt="Большая корзинка для игрушек">
+                <img class="card__picture-image" src="img/photo-toys-mobile@1x.jpg" width="258" height="195" alt="Большая корзинка для игрушек">
               </p>
-              <h2 class="card__title">Большая корзинка для игрушек</h2>
+              <h3 class="card__title">Большая корзинка для игрушек</h3>
               <p class="card__description">Диаметр 30 см, высота 30 см </p>
               <div class="card__footer">
-                <p class="card__price">1500 руб.</p>
-                <button class="card__price-button" type="button">В корзину</button>
+                <p class="card__price">1 500 руб.</p>
+                <button class="card__price-button" type="button"></button>
               </div>
             </article>
           </li>
@@ -80,11 +81,11 @@
 
       <section class="video">
         <div class="video__wrapper">
-          <h2 class="video__title">Процесс производства</h2>
-          <video class="video__player" src="#"></video>
+          <h3 class="video__title">Процесс<br>производства</h3>
+          <img class="video__player" src="img/video-mobile@1x.jpg"></img>
           <div class="video__description">
             <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-            <button class="video__order order" type="button">Сделать заказ</button>
+            <a class="video__order button" href="#order">Сделать заказ</a>
           </div>
         </div>
       </section>
@@ -94,19 +95,19 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
+            <a class="social__link social__link--instagram" href="#"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+            <a class="social__link social__link--facebook" href="#"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+            <a class="social__link social__link--twitter" href="#"></a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
       </div>
     </footer>
 
