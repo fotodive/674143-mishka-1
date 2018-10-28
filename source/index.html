@@ -2,16 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/150X100" href="index.html" width="150" height="100" alt="Логотип">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" href="index.html" width="86" height="35" alt="Логотип">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__toggle"></div>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
@@ -32,7 +33,7 @@
     </header>
 
     <main class="page-main">
-      <h1 class="page-title">Милые штуки ручной работы для дома</h1>
+      <h1 class="page__title">Милые штуки ручной<br>работы для дома</h1>
       <div class="category">
         <ul class="category__list">
           <li class="category__item">
@@ -56,7 +57,7 @@
           </div>
           <div class="best-sale__intro">
             <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-            <table class="best-sale__table">
+            <table class="best-sale__table table">
               <tr>
                 <td class="table__field">Цвет:</td>
                 <td class="table__value">«Тиффани»/серый</td>
@@ -70,6 +71,7 @@
                 <td class="table__value">15 см</td>
               </tr>
             </table>
+            <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязанные корзинки в трех размерах">
           </div>
           <div class="best-sale__footer">
             <b class="best-sale__price">Цена: 990 руб.</b>
@@ -83,24 +85,24 @@
           <h2 class="features__title">Коротко о нас:</h2>
           <ul class="features__list">
             <li class="features__item">
-              <b class="features__item-description">Экологически чистые материалы</b>
+              <p class="features__item-description">Экологически<br>чистые материалы</p>
             </li>
             <li class="features__item">
-              <b class="features__item-description">Скандинавский стиль по российской цене</b>
+              <p class="features__item-description">Скандинавский стиль<br>по российской цене</p>
             </li>
             <li class="features__item">
-              <b class="features__item-description">Увеличивает лайки на фотографиях</b>
+              <p class="features__item-description">Увеличивает лайки<br>на фотографиях</p>
             </li>
           </ul>
           <ul class="features__list">
             <li class="features__item">
-              <b class="features__item-description">Связано вручную с любовью и умилением</b>
+              <p class="features__item-description">Связано вручную с любовью и умилением</p>
             </li>
             <li class="features__item">
-              <b class="features__item-description">Поддержка отечественного производителя</b>
+              <p class="features__item-description">Поддержка отечественного производителя</p>
             </li>
             <li class="features__item">
-              <b class="features__item-description">Поставляется в подарочной упаковке</b>
+              <p class="features__item-description">Поставляется в подарочной упаковке</p>
             </li>
           </ul>
         </div>
@@ -120,11 +122,11 @@
               </cite>
             </blockquote>
             <div class="reviews__wrapper-button">
-              <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-              <button class="reviews__next" type="button">Следующий отзыв</button>
+              <a class="reviews__prev" href="#prev"></a>
+              <a class="reviews__next" href="#next"></a>
             </div>
           </div>
-          <button class="reviews__write" type="button">Написать</a>
+          <a class="reviews__write button" href="#write-us">Написать</a>
         </div>
       </section>
 
@@ -132,19 +134,22 @@
         <div class="contacts__wrapper">
           <div class="contacts__list">
             <h2 class="contacts__title">Контакты</h2>
-            <p class="contacts__item">
-              <span class="contacts__field">e-mail:</span>
-              <a class="contacts__e-mail" href="#">info@mimimishkashop.ru</a>
-            </p>
-            <p class="contacts__item">
-              <span class="contacts__field">адрес:</span>
-              г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
-            </p>
+            <table class="contacts__table">
+              <tr>
+                <td class="table__field">e-mail:</td>
+                <td class="table__value"><a class="contacts__e-mail" href="#">info@mimimishkashop.ru</a></tr>
+              </tr>
+              <tr>
+                <td class="table__field">адрес:</td>
+                <td class="table__value">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br>д. 19/8, офис 101</td>
+              </tr>
+            </table>
           </div>
-          <div class="contacts__map">
-          </div>
-          <button class="contacts__write" type="button">Напишите нам</button>
         </div>
+        <div class="contacts__map">
+          <img src="img/map-mobile@1x.jpg" width="320" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+        </div>
+        <a class="contacts__write button" type="button">Напишите нам</a>
       </section>
 
     </main>
@@ -153,19 +158,19 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
+            <a class="social__link social__link--instagram" href="#"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+            <a class="social__link social__link--facebook" href="#"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+            <a class="social__link social__link--twitter" href="#"></a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
       </div>
     </footer>
 
@@ -192,6 +197,6 @@
         <button class="modal__add-order button" type="submit">Добавить</button>
       </form>
     </section>
-
+    <script src="js/script.js"></script>
   </body>
 </html>
